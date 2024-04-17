@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace csharp_typesystem_snacks
 {
@@ -72,16 +73,6 @@ namespace csharp_typesystem_snacks
 
             Console.WriteLine($"numeri stampati ");
 
-            /*da eliminare
-            for ( int i = 0;i < numeri.Length;i++ )
-            {
-                //cosi tampo tutti i numeri inseriti 
-                //Console.WriteLine(numeri[i]);
-            }
-            */
-
-
-
 
             for (int i = 0; i < numeri.Length; i++)
             {
@@ -117,7 +108,7 @@ namespace csharp_typesystem_snacks
 
 
             //Snack 5 
-            //int numeroDaValutare ;
+            
             Console.WriteLine("inserisci un numero");
             int numeroDaValutare = Convert.ToInt32(Console.ReadLine());
 
@@ -164,12 +155,39 @@ namespace csharp_typesystem_snacks
             {
                 Console.WriteLine("Mi dispiace, non sei invitato.");
             }
+
+
+            //Snack 7
+            int[] array6 = new int[6];
+
+            for (int i = 0; i < array6.Length; i++)
+            {
+                Console.WriteLine($"{i + 1} inserisci un numero");
+                int numero = int.Parse(Console.ReadLine());
+
+                if (numero % 2 != 0)
+                {
+                    array6[i] = numero;
+                }
+                else
+                {
+                    array6[i] = 0;
+                }
+
+                
+            }
+
+            foreach (int compilato6 in array6)
+            {
+                Console.WriteLine($"lista {compilato6}");
+            }
+            
+
+
+
         }
     
-            //string invitato = mioNome = Gatsby;
-
-            //faccio un foreach e comparo i nomi con 
-            //.ToLower()
+           
     }
 }
 
