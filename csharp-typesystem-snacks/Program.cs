@@ -60,11 +60,14 @@ namespace csharp_typesystem_snacks
 
 
             int[] numeri = new int[10];
-           
-            for ( int i = 1; i < numeri.Length; i++ )
+            int risultato = 0;
+            Console.WriteLine(numeri.Length);
+
+            for ( int i = 0; i < numeri.Length; i++ )
             {
                 Console.WriteLine($"inserisci il numero { i + 1}");
                 numeri[i] = Convert.ToInt32(Console.ReadLine());
+                
             }
 
             Console.WriteLine($"numeri stampati ");
@@ -73,7 +76,16 @@ namespace csharp_typesystem_snacks
                 //cosi tampo tutti i numeri inseriti 
                 Console.WriteLine(numeri[i]);
             }
-            Console.WriteLine(numeri);
+            for ( int i = 0; i < numeri.Length; i++)
+            {
+                //risultato += numeri[i];
+                risultato = risultato + numeri[i];
+                //Console.WriteLine("totale " + numeri[i] + numeri[i]);
+
+            }
+            
+            Console.WriteLine($"totale {risultato}" );
+            
 
         }
     }
