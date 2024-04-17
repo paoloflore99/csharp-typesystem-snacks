@@ -55,6 +55,26 @@ namespace csharp_typesystem_snacks
 
 
 
+
+            //Snack 3
+
+
+            int[] numeri = new int[10];
+           
+            for ( int i = 1; i < numeri.Length; i++ )
+            {
+                Console.WriteLine($"inserisci il numero { i + 1}");
+                numeri[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            Console.WriteLine($"numeri stampati ");
+            for ( int i = 0;i < numeri.Length;i++ )
+            {
+                //cosi tampo tutti i numeri inseriti 
+                Console.WriteLine(numeri[i]);
+            }
+            Console.WriteLine(numeri);
+
         }
     }
 }
