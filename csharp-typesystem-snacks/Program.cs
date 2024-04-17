@@ -72,13 +72,13 @@ namespace csharp_typesystem_snacks
 
             Console.WriteLine($"numeri stampati ");
 
-            //da eliminare
+            /*da eliminare
             for ( int i = 0;i < numeri.Length;i++ )
             {
                 //cosi tampo tutti i numeri inseriti 
                 //Console.WriteLine(numeri[i]);
             }
-
+            */
 
 
 
@@ -134,10 +134,17 @@ namespace csharp_typesystem_snacks
 
 
 
+            //Sneck 6
+            string[] Gatsby = { "paolo", "flore", "marco", "rossi", "serena", "martina", "marta", "andrea"};
 
 
+            Console.WriteLine("inserisci il tuo nome");
+            string mioNome;
 
+            //string invitato = mioNome = Gatsby;
 
+            //faccio un foreach e comparo i nomi con 
+            //.ToLower()
         }
     }
 }
