@@ -63,11 +63,11 @@ namespace csharp_typesystem_snacks
             int risultato = 0;
             Console.WriteLine(numeri.Length);
 
-            for ( int i = 0; i < numeri.Length; i++ )
+            for (int i = 0; i < numeri.Length; i++)
             {
-                Console.WriteLine($"inserisci il numero { i + 1}");
+                Console.WriteLine($"inserisci il numero {i + 1}");
                 numeri[i] = Convert.ToInt32(Console.ReadLine());
-                
+
             }
 
             Console.WriteLine($"numeri stampati ");
@@ -83,7 +83,7 @@ namespace csharp_typesystem_snacks
 
 
 
-            for ( int i = 0; i < numeri.Length; i++)
+            for (int i = 0; i < numeri.Length; i++)
             {
                 //metodo breve con il +=
                 risultato += numeri[i];
@@ -93,8 +93,8 @@ namespace csharp_typesystem_snacks
 
 
             }
-            
-            Console.WriteLine($"totale {risultato}" );
+
+            Console.WriteLine($"totale {risultato}");
 
 
 
@@ -105,12 +105,12 @@ namespace csharp_typesystem_snacks
 
             int somma = 0;
 
-            for ( int i = 0; i < arrey4.Length; i++)
+            for (int i = 0; i < arrey4.Length; i++)
             {
                 somma += arrey4[i];
             }
 
-            Console.WriteLine($"{somma/9}");
+            Console.WriteLine($"{somma / 9}");
 
 
 
@@ -123,29 +123,54 @@ namespace csharp_typesystem_snacks
 
             bool pari = numeroDaValutare % 2 == 0;
 
-            if ( pari )
+            if (pari)
             {
                 Console.WriteLine("il numero e pari" + pari);
             }
             else
             {
-                Console.WriteLine("il numero e dispari  " + pari +1);
+                Console.WriteLine("il numero e dispari  " + (numeroDaValutare % 2 == 0) + 1);
+
             }
 
 
 
             //Sneck 6
-            string[] Gatsby = { "paolo", "flore", "marco", "rossi", "serena", "martina", "marta", "andrea"};
+            string[] Gatsby = { "paolo", "flore", "marco", "rossi", "serena", "martina", "marta", "andrea" };
 
 
             Console.WriteLine("inserisci il tuo nome");
-            string mioNome;
+            string mioNome = Console.ReadLine();
+            bool invitato = false;
 
+            foreach (string invitati in Gatsby)
+            {
+
+                //il .ToLower() serve per le gestioni delle maiuscole 
+                if (mioNome.ToLower() == invitati.ToLower())
+                {
+                    invitato = true;
+                    break;
+                }
+            }
+
+
+
+            if (invitato)
+            {
+                Console.WriteLine($"Ciao {mioNome}, sei invitato!");
+            }
+            else
+            {
+                Console.WriteLine("Mi dispiace, non sei invitato.");
+            }
+        }
+    
             //string invitato = mioNome = Gatsby;
 
             //faccio un foreach e comparo i nomi con 
             //.ToLower()
-        }
     }
 }
+
 
