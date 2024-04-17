@@ -31,7 +31,27 @@ namespace csharp_typesystem_snacks
 
 
 
+            //punto 2 
+            string paorlaUno;
+            Console.WriteLine("iserisci la prima parola");
+            paorlaUno = Console.ReadLine();
 
+            string parolaDue;
+            Console.WriteLine("iserisci la seconda parola");
+            parolaDue = Console.ReadLine();
+
+            if (paorlaUno.Length > parolaDue.Length)
+            {
+                Console.WriteLine($"la parola {paorlaUno} e piu lunga");
+            }
+            else if (paorlaUno.Length < parolaDue.Length)
+            {
+                Console.WriteLine($"la parola {parolaDue} e piu lunga");
+            }
+            else
+            {
+                Console.WriteLine($"le parole {paorlaUno} e {parolaDue} hanno la stessa lunghezza");
+            }
 
 
 
