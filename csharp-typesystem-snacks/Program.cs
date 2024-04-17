@@ -78,14 +78,34 @@ namespace csharp_typesystem_snacks
             }
             for ( int i = 0; i < numeri.Length; i++)
             {
-                //risultato += numeri[i];
-                risultato = risultato + numeri[i];
-                //Console.WriteLine("totale " + numeri[i] + numeri[i]);
+                //metodo breve con il +=
+                risultato += numeri[i];
+
+                //metodo "lungo"
+                //risultato = risultato + numeri[i];
+
 
             }
             
             Console.WriteLine($"totale {risultato}" );
-            
+
+
+
+
+
+            //Snack 4
+            int[] arrey4 = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            int somma = 0;
+
+            for ( int i = 0; i < arrey4.Length; i++)
+            {
+                somma += arrey4[i];
+            }
+
+            Console.WriteLine($"{somma/9}");
+
+
 
         }
     }
