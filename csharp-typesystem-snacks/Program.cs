@@ -71,11 +71,18 @@ namespace csharp_typesystem_snacks
             }
 
             Console.WriteLine($"numeri stampati ");
+
+            //da eliminare
             for ( int i = 0;i < numeri.Length;i++ )
             {
                 //cosi tampo tutti i numeri inseriti 
-                Console.WriteLine(numeri[i]);
+                //Console.WriteLine(numeri[i]);
             }
+
+
+
+
+
             for ( int i = 0; i < numeri.Length; i++)
             {
                 //metodo breve con il +=
@@ -104,6 +111,30 @@ namespace csharp_typesystem_snacks
             }
 
             Console.WriteLine($"{somma/9}");
+
+
+
+
+
+            //Snack 5 
+            //int numeroDaValutare ;
+            Console.WriteLine("inserisci un numero");
+            int numeroDaValutare = Convert.ToInt32(Console.ReadLine());
+
+            bool pari = numeroDaValutare % 2 == 0;
+
+            if ( pari )
+            {
+                Console.WriteLine("il numero e pari" + pari);
+            }
+            else
+            {
+                Console.WriteLine("il numero e dispari  " + pari +1);
+            }
+
+
+
+
 
 
 
