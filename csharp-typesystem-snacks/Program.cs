@@ -181,13 +181,28 @@ namespace csharp_typesystem_snacks
             {
                 Console.WriteLine($"lista {compilato6}");
             }
-            
+
+
+
+
+            //Snack 8
+            int[] arrayPari = {2,3,4,5,6,7,8,9,0,14,424,53};
+            int parametro = 0;
+
+            for (int i = 0; i < arrayPari.Length; i+= 2)
+            {
+                parametro += arrayPari[i];
+            }
+
+            Console.WriteLine($"la somma e {parametro}");
+
+
 
 
 
         }
-    
-           
+
+
     }
 }
 
